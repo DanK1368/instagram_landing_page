@@ -1,0 +1,290 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300;400&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul, ol {
+  list-style: none;
+}
+
+/* removes underline for links */
+a {
+  text-decoration: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 62.5%;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+p,
+input,
+button {
+  font-size: 0.7rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+}
+
+.hero__image {
+  width: 350px;
+}
+
+.cta__image {
+  width: 120px;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.hero__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+  margin: auto;
+}
+
+@media only screen and (max-width: 875px) {
+  .image__container {
+    display: none;
+  }
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 70vh;
+  width: 20rem;
+}
+
+.insta__login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  border: 1px solid #cacaca;
+  background: whitesmoke;
+}
+@media only screen and (max-width: 420px) {
+  .insta__login__container {
+    border: none;
+  }
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.2rem;
+}
+.login__form__input {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  border: 1px solid #cacaca;
+  background: #e0e0e0;
+}
+.login__form__input:focus {
+  border: 1px solid #818181;
+  outline: none;
+}
+.login__form__button {
+  width: 80%;
+  background: lightskyblue;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.text__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.text__wrapper hr {
+  width: 90px;
+  border: none;
+  height: 1px;
+  background: lightgrey;
+}
+.text__wrapper p {
+  color: #818181;
+}
+
+.facebook__login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.facebook__login__container__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #184dad;
+}
+.facebook__login__container__text i {
+  padding-right: 0.5rem;
+}
+.facebook__login__container__text p {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.facebook__login__container a {
+  color: #184dad;
+  font-size: 0.6rem;
+}
+
+.signUp__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: whitesmoke;
+  padding-block: 1rem;
+  border: 1px solid #cacaca;
+}
+@media only screen and (max-width: 420px) {
+  .signUp__wrapper {
+    border: none;
+  }
+}
+.signUp__wrapper__text {
+  color: #4b93f0;
+  font-family: 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+.cta__text {
+  padding-block: 1rem;
+}
+
+.download__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  cursor: pointer;
+}
+
+.footer__container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  align-self: baseline;
+  height: 100%;
+  place-content: bottom;
+}
+.footer__container * {
+  color: #818181;
+}
+.footer__container__company__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.4rem;
+}
+@media only screen and (max-width: 875px) {
+  .footer__container__company__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+}
+.footer__container__category__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media only screen and (max-width: 875px) {
+  .footer__container__category__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+}
+.footer__container__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+  gap: 1rem;
+  padding-block: 1rem;
+}/*# sourceMappingURL=main.css.map */
